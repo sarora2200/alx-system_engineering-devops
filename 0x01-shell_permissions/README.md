@@ -1,1 +1,1 @@
-sudo chown betty ---> change owner to be betty
+su - betty  ---> switch user  to be betty
