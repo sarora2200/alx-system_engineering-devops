@@ -17,9 +17,9 @@ defaults
     timeout client 50000
     timeout server 50000
 
-frontend www.rorido.tech
+frontend www.sarahabdeldayem.tech
     bind *:80
-    bind *:443 ssl crt /etc/ssl/www.rorido.tech/www.rorido.tech.pem
+    bind *:443 ssl crt /etc/letsencrypt/live/www.sarahabdeldayem.tech/fullchain.pem
     redirect scheme https code 301 if !{ ssl_fc }
     default_backend servers
 
