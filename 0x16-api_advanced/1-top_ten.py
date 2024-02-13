@@ -19,3 +19,6 @@ def top_ten(subreddit):
         return
     results = response.json().get("data")
     [print(c.get("data").get("title")) for c in results.get("children")]
+
+top_ten('test', 'zyI3nwJcNkxgx5dm8BU2gg',
+        'B54RtrFiPqhIDoCuUBvbrwJF6hdXUA')
